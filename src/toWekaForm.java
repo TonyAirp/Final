@@ -16,7 +16,7 @@ import padl.creator.aolfile.javacup.internal_error;
 import com.sun.tools.hat.internal.parser.Reader;
 
 public class toWekaForm {
-	final static String path = "F:/AntiPattern/antiSmell/Temp/Leiyh3/";
+	final static String path = "F:/AntiPattern/antiSmell/Temp/Leiyh5/";
 	final static String sortPath = "F:/AntiPattern/Temp/"
 			+ ICPC2015.resultsPath;
 
@@ -136,22 +136,30 @@ public class toWekaForm {
 		try {
 			FileWriter fileWriter = new FileWriter(resultFile);
 			fileWriter.write("@relation Blob\n");
-			fileWriter.write("\n@attribute NAD_NMD REAL\n");
-			fileWriter.write("@attribute LCOM5 REAL\n");
-			fileWriter.write("@attribute DataSize REAL\n");
+			fileWriter.write("\n@attribute NAD_NMD numeric\n");
+//			fileWriter.write("@attribute LCOM5 REAL\n");
+			fileWriter.write("@attribute DataSize numeric\n");
 			fileWriter.write("@attribute class {0,1}\n");
 			fileWriter.write("\n@Data\n");
 			for (int i = 0; i < NAD_NMD.size(); i++) {
 				int classResult = 0;
 				// 判断结果
 				for (int j = 0; j < sortResults.size(); j++) {
-					if (names.get(i).contains(sortResults.get(j))) {
+					if (names.get(i).equals(sortResults.get(j))) {
 						System.out.println("!!!wacacaca");
 						classResult = 1;
 					}
 				}
-				fileWriter.write(NAD_NMD.get(i) + "," + LCOM5.get(i) + ","
-						+ DataSize.get(i) + "," + classResult + "\n");
+				if(classResult == 1){
+//					fileWriter.write(NAD_NMD.get(i) + "," 
+//							+ DataSize.get(i) + "," + classResult + "\n");
+//
+					fileWriter.write(NAD_NMD.get(i) + "," 
+							+ DataSize.get(i) + "," + classResult  + ",{5}"+ "\n");
+				}else{
+					fileWriter.write(NAD_NMD.get(i) + "," 
+							+ DataSize.get(i) + "," + classResult + "\n");
+				}
 			}
 			fileWriter.close();
 		} catch (IOException e) {
@@ -251,7 +259,7 @@ public class toWekaForm {
 			for (int i = 0; i < NAD_NMD.size(); i++) {
 				int classResult = 0;
 				for (int j = 0; j < sortResults.size(); j++) {
-					if (names.get(i).contains(sortResults.get(j))) {
+					if (names.get(i).equals(sortResults.get(j))) {
 						System.out.println("!!!wacacaca2");
 						classResult = 1;
 					}
@@ -347,7 +355,7 @@ public class toWekaForm {
 			for (int i = 0; i < NAD_NMD.size(); i++) {
 				int classResult = 0;
 				for (int j = 0; j < sortResults.size(); j++) {
-					if (names.get(i).contains(sortResults.get(j))) {
+					if (names.get(i).equals(sortResults.get(j))) {
 						System.out.println("!!!wacacaca3");
 						classResult = 1;
 					}
@@ -450,7 +458,7 @@ public class toWekaForm {
 			for (int i = 0; i < NOTI.size(); i++) {
 				int classResult = 0;
 				for (int j = 0; j < sortResults.size(); j++) {
-					if (names.get(i).contains(sortResults.get(j))) {
+					if (names.get(i).equals(sortResults.get(j))) {
 						System.out.println("!!!wacacaca4");
 						classResult = 1;
 					}
@@ -551,7 +559,7 @@ public class toWekaForm {
 			for (int i = 0; i < NOC.size(); i++) {
 				int classResult = 0;
 				for (int j=0; j<sortResults.size(); j++){
-					if (names.get(i).contains(sortResults.get(j))){
+					if (names.get(i).equals(sortResults.get(j))){
 						System.out.println("!!!wacacaca5");
 						classResult = 1;
 					}
@@ -642,7 +650,7 @@ public class toWekaForm {
 			for (int i = 0; i < NOI.size(); i++) {
 				int classResult = 0;
 				for (int j = 0; j < sortResults.size(); j++){
-					if (names.get(i).contains(sortResults.get(j))){
+					if (names.get(i).equals(sortResults.get(j))){
 						classResult = 1;
 					}
 				}

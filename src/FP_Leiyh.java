@@ -26,16 +26,17 @@ import com.sun.tools.javah.Util.Exit;
 
 public class FP_Leiyh{
 	final static String[] path = {
-		"F:/target/xerces-2_11_0",
-		"F:/target/xerces-2_10_0",
+		"F:/target/xerces-2_11_0/src",
+		"F:/target/xerces-2_10_0/src",
 		"F:/target/apache-log4j-2.1",
 		"F:/target/ArgoUML-0.24",
 		"F:/target/ArgoUML-0.26",
-		"F:/target/cocoon-all-3.0.0-alpha-3",
-		"F:/target/xalan-j_2_6_0",
-		"F:/target/xalan-j_2_7_0",
+		"F:/target/cocoon-all-3.0.0-alpha-3/src",
+		"F:/target/xalan-j_2_6_0/src",
+		"F:/target/xalan-j_2_7_0/src",
+		"F:/target/jfreechart-1.0.16/source",
 	};
-	final static String resultPath = System.getProperty("user.dir") + "\\Temp\\Leiyh3\\";	//TODO please fill in
+	final static String resultPath = System.getProperty("user.dir") + "\\Temp\\Leiyh5\\";	//TODO please fill in
 	
 	public static void main(String[] args){
 		getMetrics();
@@ -77,13 +78,18 @@ public class FP_Leiyh{
 //					}catch (Exception e){
 //						System.out.println("Fail");
 //					}
-					BbMetrics(idiomLevelModel, aClass, version[i]);
-					CCMetrics(idiomLevelModel, aClass, version[i]);
-					LCMetrics(idiomLevelModel, aClass, version[i]);
-					MCMetrics(idiomLevelModel, aClass, version[i]);
-					PBMetrics(idiomLevelModel, aClass, version[i]);
-					SGMetrics(idiomLevelModel, aClass, version[i]);
-					SKMetrics(idiomLevelModel, aClass, version[i]);
+					String[] pathSlices = path[i].split("/");
+					String aName = pathSlices[pathSlices.length-2];
+					if (aName.equals("target")){
+						aName = pathSlices[pathSlices.length-1];
+					}
+					BbMetrics(idiomLevelModel, aClass, aName);
+					CCMetrics(idiomLevelModel, aClass, aName);
+					LCMetrics(idiomLevelModel, aClass, aName);
+					MCMetrics(idiomLevelModel, aClass, aName);
+					PBMetrics(idiomLevelModel, aClass, aName);
+					SGMetrics(idiomLevelModel, aClass, aName);
+					SKMetrics(idiomLevelModel, aClass, aName);
 				}
 			}
 		}
