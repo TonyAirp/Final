@@ -1,0 +1,245 @@
+=== Run information ===
+
+Scheme:weka.classifiers.bayes.NaiveBayes -K
+Relation:     Blob
+Instances:    822
+Attributes:   3
+              NAD_NMD
+              DataSize
+              class
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                             Class
+Attribute                        0             1
+                            (0.87)        (0.13)
+=================================================
+NAD_NMD
+  [# kernels]                    32            13
+  [std. dev]                11.8235       11.0872
+  [precision]                3.7955        3.7955
+  K1: mean (weight)          0 (20)   49.3409 (5)
+  K2: mean (weight)    3.7955 (245)  53.1364 (10)
+  K3: mean (weight)    7.5909 (151)  56.9318 (20)
+  K4: mean (weight)    11.3864 (93)  68.3182 (10)
+  K5: mean (weight)    15.1818 (79)  75.9091 (10)
+  K6: mean (weight)    18.9773 (25)   79.7045 (5)
+  K7: mean (weight)    22.7727 (25)      83.5 (5)
+  K8: mean (weight)    26.5682 (25)  94.8864 (15)
+  K9: mean (weight)    30.3636 (15)  98.6818 (10)
+  K10: mean (weight)   34.1591 (16) 102.4773 (10)
+  K11: mean (weight)    37.9545 (6) 106.2727 (10)
+  K12: mean (weight)      41.75 (6)  129.0455 (5)
+  K13: mean (weight)    45.5455 (6)  170.7955 (5)
+  K14: mean (weight)    49.3409 (4)            --
+  K15: mean (weight)    53.1364 (8)            --
+  K16: mean (weight)    56.9318 (1)            --
+  K17: mean (weight)    60.7273 (3)            --
+  K18: mean (weight)    64.5227 (3)            --
+  K19: mean (weight)    68.3182 (2)            --
+  K20: mean (weight)    75.9091 (1)            --
+  K21: mean (weight)    79.7045 (1)            --
+  K22: mean (weight)      83.5 (18)            --
+  K23: mean (weight)    91.0909 (2)            --
+  K24: mean (weight)    98.6818 (1)            --
+  K25: mean (weight)   102.4773 (2)            --
+  K26: mean (weight)   110.0682 (1)            --
+  K27: mean (weight)   121.4545 (3)            --
+  K28: mean (weight)   132.8409 (1)            --
+  K29: mean (weight)  140.4318 (17)            --
+  K30: mean (weight)  246.7045 (16)            --
+  K31: mean (weight)      250.5 (1)            --
+  K32: mean (weight)        334 (1)            --
+
+DataSize
+  [# kernels]                     5             4
+  [std. dev]                 0.2333        0.5112
+  [precision]                   1.4           1.4
+  K1: mean (weight)         0 (692)      1.4 (50)
+  K2: mean (weight)        1.4 (87)      2.8 (40)
+  K3: mean (weight)        2.8 (15)      4.2 (20)
+  K4: mean (weight)         4.2 (2)        7 (10)
+  K5: mean (weight)         5.6 (2)            --
+
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         909               99.0196 %
+Incorrectly Classified Instances         9                0.9804 %
+Kappa statistic                          0.9567
+Mean absolute error                      0.0251
+Root mean squared error                  0.101 
+Relative absolute error                 11.0076 %
+Root relative squared error             29.9526 %
+Total Number of Instances              918     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.995     0.042      0.994     0.995     0.994      0.997    0
+                 0.958     0.005      0.966     0.958     0.962      0.997    1
+Weighted Avg.    0.99      0.037      0.99      0.99      0.99       0.997
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 794   4 |   a = 0
+   5 115 |   b = 1
+
+
+=== Re-evaluation on test set ===
+
+User supplied test set
+Relation:     Blob
+Instances:     unknown (yet). Reading incrementally
+Attributes:   3
+
+=== Summary ===
+
+Correctly Classified Instances         819               99.635  %
+Incorrectly Classified Instances         3                0.365  %
+Kappa statistic                          0.9393
+Mean absolute error                      0.0115
+Root mean squared error                  0.0591
+Total Number of Instances              822     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.996     0          1         0.996     0.998      1        0
+                 1         0.004      0.889     1         0.941      1        1
+Weighted Avg.    0.996     0          0.997     0.996     0.996      1    
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 795   3 |   a = 0
+   0  24 |   b = 1
+
+
+=== Re-evaluation on test set ===
+
+User supplied test set
+Relation:     Blob
+Instances:     unknown (yet). Reading incrementally
+Attributes:   3
+
+=== Summary ===
+
+Correctly Classified Instances         852               99.6491 %
+Incorrectly Classified Instances         3                0.3509 %
+Kappa statistic                          0.9456
+Mean absolute error                      0.0118
+Root mean squared error                  0.0604
+Total Number of Instances              855     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.996     0          1         0.996     0.998      0.999    0
+                 1         0.004      0.9       1         0.947      0.999    1
+Weighted Avg.    0.996     0          0.997     0.996     0.997      0.999
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 825   3 |   a = 0
+   0  27 |   b = 1
+
+
+=== Re-evaluation on test set ===
+
+User supplied test set
+Relation:     Blob
+Instances:     unknown (yet). Reading incrementally
+Attributes:   3
+
+=== Summary ===
+
+Correctly Classified Instances         550               98.7433 %
+Incorrectly Classified Instances         7                1.2567 %
+Kappa statistic                          0.8857
+Mean absolute error                      0.0203
+Root mean squared error                  0.0967
+Total Number of Instances              557     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.987     0          1         0.987     0.993      0.999    0
+                 1         0.013      0.806     1         0.892      0.999    1
+Weighted Avg.    0.987     0.001      0.99      0.987     0.988      0.999
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 521   7 |   a = 0
+   0  29 |   b = 1
+
+
+=== Re-evaluation on test set ===
+
+User supplied test set
+Relation:     Blob
+Instances:     unknown (yet). Reading incrementally
+Attributes:   3
+
+=== Summary ===
+
+Correctly Classified Instances         551               98.7455 %
+Incorrectly Classified Instances         7                1.2545 %
+Kappa statistic                          0.8857
+Mean absolute error                      0.0202
+Root mean squared error                  0.0966
+Total Number of Instances              558     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.987     0          1         0.987     0.993      0.999    0
+                 1         0.013      0.806     1         0.892      0.999    1
+Weighted Avg.    0.987     0.001      0.99      0.987     0.988      0.999
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 522   7 |   a = 0
+   0  29 |   b = 1
+
+
+=== Re-evaluation on test set ===
+
+User supplied test set
+Relation:     Blob
+Instances:     unknown (yet). Reading incrementally
+Attributes:   3
+
+=== Summary ===
+
+Correctly Classified Instances         477               96.1694 %
+Incorrectly Classified Instances        19                3.8306 %
+Kappa statistic                          0.7397
+Mean absolute error                      0.0495
+Root mean squared error                  0.1698
+Total Number of Instances              496     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.961     0.032      0.998     0.961     0.979      0.964    0
+                 0.968     0.039      0.625     0.968     0.759      0.964    1
+Weighted Avg.    0.962     0.033      0.974     0.962     0.965      0.964
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 447  18 |   a = 0
+   1  30 |   b = 1
+

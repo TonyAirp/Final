@@ -1,0 +1,204 @@
+=== Run information ===
+
+Scheme:weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     Blob
+Instances:    557
+Attributes:   3
+              NAD_NMD
+              DataSize
+              class
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Bayes Network Classifier
+not using ADTree
+#attributes=3 #classindex=2
+Network structure (nodes followed by parents)
+NAD_NMD(2): class 
+DataSize(3): class 
+class(2): 
+LogScore Bayes: -755.9771479105713
+LogScore BDeu: -763.1749649436167
+LogScore MDL: -770.6855499789933
+LogScore ENTROPY: -748.5565716392477
+LogScore AIC: -755.5565716392477
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         668               99.2571 %
+Incorrectly Classified Instances         5                0.7429 %
+Kappa statistic                          0.9777
+Mean absolute error                      0.0135
+Root mean squared error                  0.0876
+Relative absolute error                  3.9933 %
+Root relative squared error             21.3071 %
+Total Number of Instances              673     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0.034      0.991     1         0.995      0.995    0
+                 0.966     0          1         0.966     0.982      0.995    1
+Weighted Avg.    0.993     0.027      0.993     0.993     0.993      0.995
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 528   0 |   a = 0
+   5 140 |   b = 1
+
+
+=== Re-evaluation on test set ===
+
+User supplied test set
+Relation:     Blob
+Instances:     unknown (yet). Reading incrementally
+Attributes:   3
+
+=== Summary ===
+
+Correctly Classified Instances         821               99.8783 %
+Incorrectly Classified Instances         1                0.1217 %
+Kappa statistic                          0.9781
+Mean absolute error                      0.0057
+Root mean squared error                  0.0366
+Total Number of Instances              822     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0.042      0.999     1         0.999      0.993    0
+                 0.958     0          1         0.958     0.979      0.993    1
+Weighted Avg.    0.999     0.04       0.999     0.999     0.999      0.993
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 798   0 |   a = 0
+   1  23 |   b = 1
+
+
+=== Re-evaluation on test set ===
+
+User supplied test set
+Relation:     Blob
+Instances:     unknown (yet). Reading incrementally
+Attributes:   3
+
+=== Summary ===
+
+Correctly Classified Instances         854               99.883  %
+Incorrectly Classified Instances         1                0.117  %
+Kappa statistic                          0.9805
+Mean absolute error                      0.0055
+Root mean squared error                  0.0357
+Total Number of Instances              855     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0.037      0.999     1         0.999      0.993    0
+                 0.963     0          1         0.963     0.981      0.993    1
+Weighted Avg.    0.999     0.036      0.999     0.999     0.999      0.993
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 828   0 |   a = 0
+   1  26 |   b = 1
+
+
+=== Re-evaluation on test set ===
+
+User supplied test set
+Relation:     Blob
+Instances:     unknown (yet). Reading incrementally
+Attributes:   3
+
+=== Summary ===
+
+Correctly Classified Instances         557              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0.0026
+Root mean squared error                  0.0086
+Total Number of Instances              557     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        0
+                 1         0          1         1         1          1        1
+Weighted Avg.    1         0          1         1         1          1    
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 528   0 |   a = 0
+   0  29 |   b = 1
+
+
+=== Re-evaluation on test set ===
+
+User supplied test set
+Relation:     Blob
+Instances:     unknown (yet). Reading incrementally
+Attributes:   3
+
+=== Summary ===
+
+Correctly Classified Instances         558              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0.0026
+Root mean squared error                  0.0086
+Total Number of Instances              558     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        0
+                 1         0          1         1         1          1        1
+Weighted Avg.    1         0          1         1         1          1    
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 529   0 |   a = 0
+   0  29 |   b = 1
+
+
+=== Re-evaluation on test set ===
+
+User supplied test set
+Relation:     Blob
+Instances:     unknown (yet). Reading incrementally
+Attributes:   3
+
+=== Summary ===
+
+Correctly Classified Instances         495               99.7984 %
+Incorrectly Classified Instances         1                0.2016 %
+Kappa statistic                          0.9831
+Mean absolute error                      0.0052
+Root mean squared error                  0.0448
+Total Number of Instances              496     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.998     0          1         0.998     0.999      0.999    0
+                 1         0.002      0.969     1         0.984      0.999    1
+Weighted Avg.    0.998     0          0.998     0.998     0.998      0.999
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 464   1 |   a = 0
+   0  31 |   b = 1
+
